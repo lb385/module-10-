@@ -57,8 +57,10 @@ uvicorn app.main:app --reload
 
 ## Docker Hub
 
-- Repository: https://hub.docker.com/r/lb385/module-10-
-- Tags page: https://hub.docker.com/r/lb385/module-10-/tags
+- Docker Hub profile: https://hub.docker.com/u/lb385
+- After your first successful image push, add your exact repository links here:
+  - `https://hub.docker.com/r/<dockerhub-username>/<repository-name>`
+  - `https://hub.docker.com/r/<dockerhub-username>/<repository-name>/tags`
 
 ## GitHub Actions secrets required
 
