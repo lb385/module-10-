@@ -19,7 +19,7 @@ This project implements a secure `User` model in FastAPI using SQLAlchemy and Py
   - Security scans with Trivy
   - Builds and pushes image to Docker Hub after successful tests
 
-## Run locally
+## Run tests locally
 
 ### 1) Install dependencies
 
@@ -30,6 +30,11 @@ pip install -r requirements.txt
 ```
 
 ### 2) Run tests
+
+Brief overview:
+
+- Run `tests/unit` for fast local validation (no database required).
+- Run full `pytest` for unit + integration tests (requires PostgreSQL and `DATABASE_URL`).
 
 Unit tests only:
 
@@ -52,9 +57,8 @@ uvicorn app.main:app --reload
 
 ## Docker Hub
 
-- Docker Hub repository: https://hub.docker.com/r/<your-dockerhub-username>/<your-repository>
-
-Replace placeholders with your actual Docker Hub path.
+- Repository: https://hub.docker.com/r/lb385/module-10-
+- Tags page: https://hub.docker.com/r/lb385/module-10-/tags
 
 ## GitHub Actions secrets required
 
