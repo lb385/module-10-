@@ -57,11 +57,10 @@ uvicorn app.main:app --reload
 
 ## Docker Hub
 
-- Docker Hub profile: https://hub.docker.com/u/lb385
-- If the repository page is not found, create a Docker Hub repository named `module-10`, then rerun the GitHub Actions workflow.
+- Docker Hub profile: https://hub.docker.com/u/lohiteesh256
 - After the first successful push, use these links in this README:
-  - https://hub.docker.com/r/lb385/module-10
-  - https://hub.docker.com/r/lb385/module-10/tags
+  - https://hub.docker.com/r/lohiteesh256/module-10
+  - https://hub.docker.com/r/lohiteesh256/module-10/tags
 
 ## GitHub Actions secrets required
 
