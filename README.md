@@ -58,9 +58,10 @@ uvicorn app.main:app --reload
 ## Docker Hub
 
 - Docker Hub profile: https://hub.docker.com/u/lb385
-- After your first successful image push, add your exact repository links here:
-  - `https://hub.docker.com/r/<dockerhub-username>/<repository-name>`
-  - `https://hub.docker.com/r/<dockerhub-username>/<repository-name>/tags`
+- If the repository page is not found, create a Docker Hub repository named `module-10`, then set `DOCKERHUB_REPOSITORY=module-10` in GitHub Secrets and rerun the workflow.
+- After the first successful push, use these links in this README:
+  - https://hub.docker.com/r/lb385/module-10
+  - https://hub.docker.com/r/lb385/module-10/tags
 
 ## GitHub Actions secrets required
 
