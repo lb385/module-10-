@@ -72,7 +72,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: lb385
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push Docker image
@@ -81,13 +81,13 @@ jobs:
           context: .
           push: true
           tags: |
-            lb385/module-10:latest
-            lb385/module-10:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/module-10:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/module-10:${{ github.sha }}
 
       - name: Trivy image scan
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: lb385/module-10:latest
+          image-ref: ${{ secrets.DOCKERHUB_USERNAME }}/module-10:latest
           format: table
           exit-code: "1"
           ignore-unfixed: true

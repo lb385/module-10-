@@ -65,6 +65,7 @@ uvicorn app.main:app --reload
 
 ## GitHub Actions secrets required
 
+- `DOCKERHUB_USERNAME`
 - `DOCKERHUB_TOKEN`
 
 ## Submission checklist
